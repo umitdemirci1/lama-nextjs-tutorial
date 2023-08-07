@@ -31,10 +31,6 @@
     opacity: .8;
 }
 
-.image {
-    
-}
-
 .frame:nth-child(1) {
     background: url('/illustration.png');
 }
