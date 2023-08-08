@@ -18,7 +18,7 @@ export default async function Blog() {
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (
-        <Link href={"/blog/id"} className={styles.container} key={item.id}>
+        <Link href={`/blog/${item.id}`} className={styles.container} key={item.id}>
           <div className={styles.imageContainer}>
             <Image
               src={
