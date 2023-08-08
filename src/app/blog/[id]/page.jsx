@@ -1,13 +1,18 @@
-'use client'
-import { useParams, useRouter } from "next/navigation";
+import { notFound } from "next/navigation";
 
-const BlogPost = () => {
-    const router = useRouter()
-    const param = useParams()
-    console.log(param)
-    return (
-        <div>Blogpost{param.id}</div>
-    );
+async function getData(id) {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+
+  if (!res.ok) {
+    return notFound();
+  }
+
+  return res.json();
 }
+
+const BlogPost = async ({ params }) => {
+  const data = await getData(params.id);
+  return <div>{<p>{data.title}</p>} </div>;
+};
 
 export default BlogPost;

@@ -1,3 +1,21 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
-    background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.content {
+  flex: 1;
 }
