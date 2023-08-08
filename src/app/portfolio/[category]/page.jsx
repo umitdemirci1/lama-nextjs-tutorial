@@ -3,10 +3,10 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 const Category = ({ params }) => {
-    const header = params.category
-    const capitalizedHeader = header.charAt(0).toUpperCase() + header.slice(1);
+  const header = params.category;
+  const capitalizedHeader = header.charAt(0).toUpperCase() + header.slice(1);
 
-    return (
+  return (
     <div className={styles.container}>
       <h1 className={styles.header}>{capitalizedHeader}</h1>
       <div className={styles.item}>
