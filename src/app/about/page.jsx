@@ -8,7 +8,8 @@ const About = () => {
             <div className={styles.imageContainer}>
                 <Image src={"https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"}
                     fill={true}
-                    className={styles.image} />
+                    className={styles.image}
+                    alt='' />
                 <div className={styles.imageText}>
                     <h1 className={styles.imageTitle}>Digital Storytellers</h1>
                     <h2 className={styles.imageDesc}>Handcrafting award winning digital experiences</h2>
