@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.formElement {
+  padding: 20px 72px 20px 8px;
+  margin-bottom: 10px;
+  border: 2px solid #bbb;
+  background-color: transparent;
+  color: #bbb;
+  outline: none;
+}
+
+.register {
+  background-color: #53c28b;
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.existingAccount {
+  background-color: white;
+  color: #53c28b;
+  padding: 6px 12px;
+  font-size: x-small;
+}
